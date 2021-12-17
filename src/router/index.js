@@ -20,9 +20,19 @@ const routes = [
     component: loadPage("PhysicalNFTs")
   },
   {
+    path: '/metaverse-marketing',
+    name: 'Metaverse',
+    component: loadPage("Metaverse")
+  },
+  {
     path: '/documentation',
     name: 'Documentation',
     component: loadPage("Documentation")
+  },
+  {
+    path: '/faq',
+    name: 'FAQ',
+    component: loadPage("FAQ")
   }
 ]
 

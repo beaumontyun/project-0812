@@ -1,5 +1,11 @@
 <template>
-  <div class="documentation">
-    <h1>This is an about page</h1>
+  <div class="h-screen">
+    <p>This is an about page</p>
   </div>
 </template>
+
+<script>
+export default {
+  name: "Documentation",
+}  
+</script>
