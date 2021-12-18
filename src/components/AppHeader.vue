@@ -20,7 +20,7 @@
             <img
               src="../assets/logo.svg"
               alt="Logo"
-              class="w-40 drop-shadow-md"
+              class="w-40"
             />
           </router-link>
         </div>

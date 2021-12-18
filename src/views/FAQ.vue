@@ -1,6 +1,9 @@
 <template>
   <div class="mx-5 md:mx-20 text-white text-left justify-left">
-    <img src="../assets/FAQ.svg" alt="FAQ" class="pb-5 w-20 md:w-40">
+    <div class="flex"><img src="../assets/FAQ.svg" alt="FAQ" class="pb-5">
+    <p class="text-quaternary-light text-5xl font-bold self-center">FAQ</p>
+    </div>
+    
     <h1>How do I show support?</h1>
     <p>
       You can show us support for free by signing up to our email and updates
@@ -87,9 +90,10 @@ export default {
 p {
   padding-top: 0.3rem;
   padding-bottom: 1rem;
+  color: #F7F8FC;
 }
 h1 {
   font-weight: bold;
-  color: black;
+  color: #F5BA94;
 }
 </style>

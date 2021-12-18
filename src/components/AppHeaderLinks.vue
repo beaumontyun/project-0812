@@ -30,7 +30,7 @@
         pt-3
         sm:pt-2 sm:border-t-0
         border-primary-light
-        hover:underline hover:decoration-2
+        hover:text-shadow-sm
       "
       aria-label="physical NFTs"
     >
@@ -50,7 +50,7 @@
         pt-3
         sm:pt-2 sm:border-t-0
         border-primary-light
-        hover:underline hover:decoration-2
+        hover:text-shadow-sm
       "
       aria-label="metaverse & marketing"
       >metaverse & marketing</router-link
@@ -69,8 +69,7 @@
         pt-3
         sm:pt-2 sm:border-t-0
         border-primary-light
-        hover:underline 
-        hover:decoration-2
+        hover:text-shadow-sm
       "
       aria-label="documentation"
       >
@@ -90,8 +89,7 @@
         pt-3
         sm:pt-2 sm:border-t-0
         border-primary-light
-        hover:underline 
-        hover:decoration-2
+        hover:text-shadow-sm
       "
       aria-label="faq"
       >FAQ</router-link

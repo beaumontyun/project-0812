@@ -16,7 +16,7 @@ module.exports = {
 				'button-color': '#B55252',
 
 				'midbg-color': '#AAC1B9',
-				'bg-color': '#6EBC81',
+				'bg-color': '#405D54',
 			},
 			container: {
 				padding: {

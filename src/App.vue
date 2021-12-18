@@ -1,6 +1,6 @@
 <template>
   <div class="pt-0.5">
-    <AppHeader class="w-5/6"/>
+    <AppHeader class="w-full"/>
 
     <transition name="fade" mode="out-in">
 			<router-view class="h-full pb-10" />
@@ -30,11 +30,12 @@ export default {
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background: #8AA79E;
+  /* background: #8AA79E; */
+  background: #405D54;
   color: #2c3e50;
 }
 

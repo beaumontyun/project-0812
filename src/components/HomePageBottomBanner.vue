@@ -1,13 +1,13 @@
 <template>
   <div class="grid grid-cols-3">
       <div id="element1" class="rounded-b-full flex items-center">
-          <img src="../assets/BottomBannerDetails1.svg" alt="" class="m-auto py-10 h-5/6">
+          <img src="../assets/BottomBannerDetails1.svg" alt="" class="min-px-2 m-auto h-5/6">
       </div>
       <div id="element2" class="rounded-b-full flex items-center">
-          <img src="../assets/BottomBannerDetails2.svg" alt="" class="m-auto py-10 h-5/6">
+          <img src="../assets/BottomBannerDetails2.svg" alt="" class="m-auto h-5/6">
       </div>
       <div id="element3" class="rounded-b-full flex items-center">
-          <img src="../assets/BottomBannerDetails3.svg" alt="" class="m-auto py-10 h-5/6">
+          <img src="../assets/BottomBannerDetails3.svg" alt="" class="m-auto h-5/6">
       </div>
   </div>
 </template>

@@ -12,7 +12,7 @@
             leading-relaxed
           "
         >
-          <div class="flex">
+          <div class="flex text-shadow-sm">
             <img src="../assets/Flag.svg" alt="Flag" />
             <div class="ml-3 grid grid-rows-2">
               <p class="text-5xl mt-5">MileStones</p>
@@ -33,7 +33,7 @@
             mt-2
           "
         >
-          <p class="select-none">
+          <p class="select-none text-shadow-sm">
             All we need is your support to make this happen! Support us for free
             by registering your email with us
           </p>

@@ -1,6 +1,6 @@
 <template>
   <div class="h-full w-full">
-    <div class="container w-5/6 hidden md:block mx-auto">
+    <div class="container w-full hidden md:block mx-auto">
       <div class="md:w-full pb-3">
         <div class="flex items-start w-11/12 sm:w-2/6">
           <img src="../assets/EWYM.svg" alt="Earn what you make" />
@@ -14,7 +14,6 @@
             text-left
             w-1/2
             select-none
-            leading-relaxed
           "
         >
           <ul class="list-disc">
