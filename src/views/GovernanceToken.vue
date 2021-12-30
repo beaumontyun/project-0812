@@ -42,7 +42,7 @@
         <img
           src="../assets/Banner2.svg"
           alt=""
-          class="h-full w-auto"
+          class="h-5/6 w-auto"
         />
         <p class="text-primary-light text-left border-b-2 border-white w-1/2 ml-3">photography by Andre Benz</p>
       </div>

@@ -43,7 +43,7 @@
 
       <!-- Screenshot -->
       <div class="mt-10">
-        <img src="../assets/DocumentationNFTBanner.svg" alt="" class="h-full w-auto"/>
+        <img src="../assets/DocumentationNFTBanner.svg" alt="" class="h-5/6 w-auto"/>
         <p class="text-primary-light text-left border-b-2 border-white w-1/2 ml-3">photography by Hello Revival</p>
       </div>
     </div>
