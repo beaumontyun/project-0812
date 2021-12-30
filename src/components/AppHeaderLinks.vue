@@ -34,7 +34,7 @@
       "
       aria-label="physical NFTs"
     >
-      physical NFTs</router-link
+      <img src="../assets/PhysicalNFTButton.svg" alt="Physical NFT"></router-link
     >
     <router-link
       to="/metaverse-marketing"
@@ -53,7 +53,7 @@
         hover:text-shadow-sm
       "
       aria-label="metaverse & marketing"
-      >metaverse & marketing</router-link
+      ><img src="../assets/MetaverseButton.svg" alt="Metaverse & Marketplace"></router-link
     >
     <router-link
       to="/documentation"
@@ -73,7 +73,7 @@
       "
       aria-label="documentation"
       >
-      documentation</router-link
+      <img src="../assets/DocumentationButton.svg" alt="Documentation"></router-link
     >
     <router-link
       to="/faq"
@@ -84,7 +84,7 @@
         font-extrabold
         sm:mx-4
         mb-2
-        sm:py-2
+        sm:py-1
         border-t-2
         pt-3
         sm:pt-2 sm:border-t-0
@@ -92,7 +92,7 @@
         hover:text-shadow-sm
       "
       aria-label="faq"
-      >FAQ</router-link
+      ><img src="../assets/FAQButton.svg" alt="FAQ"></router-link
     >
   </div>
 </template>

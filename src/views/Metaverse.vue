@@ -1,5 +1,5 @@
 <template>
-  <div class="container sm:mx-auto">
+  <div class="h-screen container sm:mx-auto">
     <div class="grid grid-cols-2 gap-x-5">
       <!-- Title and text -->
       <div class="grid grid-rows-5">
@@ -55,8 +55,9 @@
         <img
           src="../assets/MetaverseNFTBanner.svg"
           alt=""
-          class="h-5/6 w-auto"
+          class="h-full w-auto"
         />
+        <p class="text-primary-light text-left border-b-2 border-white w-1/2 ml-3">photography by Andre Benz</p>
       </div>
     </div>
   </div>

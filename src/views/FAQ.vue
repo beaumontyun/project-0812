@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-5 md:mx-20 text-white text-left justify-left">
+  <div class="h-screen container mx-auto text-white text-left justify-left">
     <div class="flex"><img src="../assets/FAQ.svg" alt="FAQ" class="pb-5">
     <p class="text-quaternary-light text-5xl font-bold self-center">FAQ</p>
     </div>

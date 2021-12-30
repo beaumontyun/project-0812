@@ -1,12 +1,12 @@
 <template>
   <div class="h-full w-full">
-    <div class="container w-full hidden md:block mx-auto">
+    <div class="container hidden md:block mx-auto">
       <div class="md:w-full pb-3">
         <div class="flex items-start w-11/12 sm:w-2/6">
           <img src="../assets/EWYM.svg" alt="Earn what you make" />
         </div>
       </div>
-      <div class="md:w-full flex justify-between">
+      <div class="md:w-full flex justify-between text-sm pb-10">
         <div
           class="
             text-quaternary-light
