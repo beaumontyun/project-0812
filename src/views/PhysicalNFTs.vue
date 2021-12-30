@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen container sm:mx-auto">
+  <div class="container sm:mx-auto">
     <div class="grid grid-cols-2 gap-x-5">
       <!-- Title and text -->
       <div class="grid grid-rows-5">
@@ -15,7 +15,7 @@
         </div>
         <!-- text -->
         <div class="row-span-4 text-primary-light text-left text-2xl font-semibold pt-10">
-          <ul class="list-disc">
+          <ul class="list-disc list-inside">
             <li>
               By bringing the online to the offline we can open up a world where
               the power and security of NFTs is applicable to any and everything
@@ -35,8 +35,10 @@
 
       <!-- Screenshot -->
       <div class="mt-10">
-        <img src="../assets/PhysicalNFTBanner.svg" alt="" class="h-5/6 w-auto">
-        <p class="text-primary-light text-left border-b-2 border-white w-1/2 ml-3">photography by Clem Onojeghuo</p>
+        <img src="../assets/PhysicalNFTBanner.svg" alt="" class="mx-auto">
+        <div class="md:w-5/6 mx-auto">
+        <p class="text-primary-light text-left border-b-2 border-white w-1/2">photography by Clem Onojeghuo</p>
+        </div>
       </div>
     </div>
   </div>
@@ -47,6 +49,3 @@ export default {
   name: "PhysicalNFTs",
 };
 </script>
-
-<style>
-</style>

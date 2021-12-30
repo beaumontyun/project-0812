@@ -16,8 +16,9 @@
       hover:drop-shadow-2xl
     "
   >
-    <router-link
-      to="/physical-nfts"
+    <div
+      type="button"
+      @click="showModal"
       class="
       antialiased
         block
@@ -31,11 +32,13 @@
         sm:pt-2 sm:border-t-0
         border-primary-light
         hover:text-shadow-sm
+        cursor-pointer
       "
       aria-label="physical NFTs"
     >
-      <img src="../assets/PhysicalNFTButton.svg" alt="Physical NFT"></router-link
+      <img src="../assets/PhysicalNFTButton.svg" alt="Physical NFT"></div
     >
+    <PhysicalNFTModal :showModal="showModal" :modal="modal" aria-modal="Physical NFT"/>
     <router-link
       to="/metaverse-marketing"
       class="
@@ -98,8 +101,27 @@
 </template>
 
 <script>
+import PhysicalNFTModal from "../views/PhysicalNFTModal.vue"
+
 export default {
-  props: ["showModal", "isOpen"],
+  props: ["isOpen"],
+  data() {
+    return {
+      modal: false,
+    }
+  },
+  components: {
+    PhysicalNFTModal,
+  },
+  methods: {
+    showModal() {
+      if (this.modal) {
+        this.modal = false;
+      } else {
+        this.modal = true;
+      }
+    }
+  }
 };
 </script>
 
