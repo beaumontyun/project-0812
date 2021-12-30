@@ -14,6 +14,7 @@
             text-left
             w-1/2
             select-none
+            text-shadow-md
           "
         >
           <ul class="list-disc">
@@ -35,6 +36,7 @@
             text-left
             w-1/2
             leading-relaxed
+            text-shadow-md
           "
         >
           <p class="select-none">

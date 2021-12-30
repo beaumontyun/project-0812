@@ -33,6 +33,16 @@ const routes = [
     path: '/faq',
     name: 'FAQ',
     component: loadPage("FAQ")
+  },
+  {
+    path: '/governance-token',
+    name: 'GovernanceToken',
+    component: loadPage("GovernanceToken")
+  },
+  {
+    path: '/smart-profile',
+    name: 'SmartProfile',
+    component: loadPage("SmartProfile")
   }
 ]
 

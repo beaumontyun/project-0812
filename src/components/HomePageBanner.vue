@@ -1,6 +1,7 @@
 <template>
   <div class="grid grid-cols-3 mb-10">
     <div>
+      <a href="/smart-profile">
       <img
         src="../assets/Banner1.svg"
         id="banner1"
@@ -12,8 +13,10 @@
       >
         smart profile cards
       </p>
+      </a>
     </div>
     <div>
+        <a href="/governance-token">
       <img
         src="../assets/Banner2.svg"
         id="banner2"
@@ -24,11 +27,12 @@
         class="text-primary-light text-left border-b-2 border-white w-1/2 ml-3"
       >
         governance tokens
-      </p>
+      </p></a>
     </div>
     <div>
+      <a href="*">
       <img
-        src="../assets/Banner3.svg"
+        src="../assets/Banner1.svg"
         id="banner3"
         alt="Banner 3"
         class="rounded-t-full w-full"
@@ -38,6 +42,7 @@
       >
         0% commission marketplace
       </p>
+      </a>
     </div>
   </div>
 </template>

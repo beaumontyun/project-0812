@@ -15,10 +15,10 @@
           <div class="flex text-shadow-sm">
             <img src="../assets/Flag.svg" alt="Flag" />
             <div class="ml-3 grid grid-rows-2">
-              <p class="text-5xl mt-5">MileStones</p>
+              <p class="text-5xl mt-5 text-shadow-md">MileStones</p>
               <div class="flex">
-                <p class="text-black text-2xl font-bold">3200</p>
-                <p class="ml-1 text-primary-white text-2xl">registers so far!</p>
+                <p class="text-black text-2xl font-bold text-shadow-md">3200</p>
+                <p class="ml-1 text-primary-white text-2xl text-shadow-md">registers so far!</p>
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@
             mt-2
           "
         >
-          <p class="select-none text-shadow-sm">
+          <p class="select-none text-shadow-md">
             All we need is your support to make this happen! Support us for free
             by registering your email with us
           </p>

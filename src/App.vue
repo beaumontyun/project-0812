@@ -35,7 +35,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   /* background: #8AA79E; */
-  background: #405D54;
+  background: #8AA79E;
   color: #2c3e50;
 }
 
