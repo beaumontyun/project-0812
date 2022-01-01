@@ -1,11 +1,11 @@
 <template>
   <!-- Hire me modal -->
   <transition name="fade">
-    <div v-show="modal4" class="fixed inset-0 mx-auto py-20 z-30 w-5/6">
+    <div v-show="modal5" class="fixed inset-0 mx-auto py-20 z-30 w-5/6">
       <!-- Modal body background as backdrop -->
       <div
-        v-show="modal4"
-        @click="showModal4()"
+        v-show="modal5"
+        @click="showModal5()"
         class="
           bg-filter bg-white bg-opacity-20
           fixed
@@ -18,30 +18,29 @@
       <!-- Modal content -->
       <main class="flex flex-col items-center justify-center ">
         <transition name="fade-up-down">
-          <div v-show="modal4" class="modal-wrapper flex items-center z-30">
+          <div v-show="modal5" class="modal-wrapper flex items-center z-30">
             <div
               class="
-                modal4
+                modal2
                 mx-5
+                bg-primary-dark
                 shadow-lg
                 flex-row
                 rounded-lg
                 relative
-                bg-cover
               "
-                id="cover"
             >
               <div class="absolute inset-y-2 py-3 top-0 right-0">
                 <button
                   class="px-4 font-bold text-gray-400"
-                  @click="showModal4()"
+                  @click="showModal5()"
                 >
                   <i data-feather="x"></i>
                 </button>
               </div>
               <!-- Modal contents -->
               <div class="p-3 text-left my-6">
-                <SmartProfile class="justify-self-center content-center" />
+                <GovernanceToken class="justify-self-center content-center"/>
               </div>
             </div>
           </div>
@@ -53,10 +52,10 @@
 
 <script>
 import feather from "feather-icons";
-import SmartProfile from "./SmartProfile.vue"
+import GovernanceToken from "./GovernanceToken.vue"
 
 export default {
-  props: ["showModal4", "modal4"],
+  props: ["showModal5", "modal5"],
   data() {
     return {};
   },
@@ -68,19 +67,15 @@ export default {
   },
   methods: {},
   components: {
-    SmartProfile
+    GovernanceToken
   }
 };
 </script>
 
 <style scoped>
-#cover {
-  background-image: url('../assets/SmartCardPageBackground.jpg');
-
-}
-/* .bg-gray-800-opacity {
+.bg-gray-800-opacity {
   background-color: #2d374850;
-} */
+}
 /* @media screen and (max-width: 768px) {
   .modal-body {
     max-height: 400px;

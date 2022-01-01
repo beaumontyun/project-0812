@@ -22,7 +22,7 @@
       <SmartProfileModal :showModal4="showModal4" :modal4="modal4" aria-modal="smart profile" />
     </div>
     <div>
-      <router-link to="/governance-token">
+      <div type="button" @click="showModal5" class="cursor-pointer">
         <img
           src="../assets/Banner2.svg"
           id="banner2"
@@ -38,8 +38,9 @@
           "
         >
           governance tokens
-        </p></router-link
+        </p></div
       >
+      <GovernanceTokenModal :showModal5="showModal5" :modal5="modal5" aria-modal="smart profile" />
     </div>
     <div>
       <router-link to="*">
@@ -66,14 +67,18 @@
 
 <script>
 import SmartProfileModal from "../views/SmartProfileModal.vue"
+import GovernanceTokenModal from "../views/GovernanceTokenModal.vue"
+
 export default {
   data() {
     return {
       modal4: false,
+      modal5: false,
     };
   },
   components: {
     SmartProfileModal,
+    GovernanceTokenModal
   },
   methods: {
     showModal4() {
@@ -87,6 +92,19 @@ export default {
           .getElementsByTagName("html")[0]
           .classList.add("overflow-y-hidden");
         this.modal4 = true;
+      }
+    },
+    showModal5() {
+      if (this.modal5) {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
+        this.modal5 = false;
+      } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
+        this.modal5 = true;
       }
     },
   },

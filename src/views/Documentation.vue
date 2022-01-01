@@ -1,5 +1,6 @@
 <template>
-  <div class="container sm:mx-auto">
+<div class="h-full">
+<div id="cover" class="p-5 mx-10 h-5/6 sm:mx-auto">
     <div class="grid grid-cols-2 gap-x-5">
       <!-- Title and text -->
       <div class="grid grid-rows-5">
@@ -12,10 +13,10 @@
           />
           <div class="text-left font-bold">
             <ul>
-              <li class="text-quaternary-light text-4xl text-shadow-md">
+              <li class="text-quaternary-light text-2xl text-shadow-md">
                 documentation
               </li>
-              <li class="text-primary-light text-2xl">
+              <li class="text-primary-light text-xl">
                 click on the below documents to download.
               </li>
             </ul>
@@ -25,7 +26,7 @@
         <div
           class="
             row-span-4
-            text-primary-light text-left text-2xl
+            text-primary-light text-left text-lg
             font-semibold
             pt-10
           "
@@ -49,6 +50,7 @@
         </div>
       </div>
     </div>
+  </div>
   </div>
 </template>
 
