@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen container sm:mx-auto">
+  <div class="container sm:mx-auto">
     <div class="grid grid-cols-2 gap-x-5">
       <!-- Title and text -->
       <div class="grid grid-rows-5">
@@ -30,7 +30,7 @@
             pt-10
           "
         >
-          <ul class="list-disc">
+          <ul class="list-disc list-inside">
             <li class="py-2">Summary 1 pager (ready once designed)</li>
             <li class="py-2">Extended summary pages (Pending)</li>
             <li class="py-2">Summary Deck (Pending)</li>
@@ -44,7 +44,9 @@
       <!-- Screenshot -->
       <div class="mt-10">
         <img src="../assets/DocumentationNFTBanner.svg" alt="" class="h-5/6 w-auto"/>
-        <p class="text-primary-light text-left border-b-2 border-white w-1/2 ml-3">photography by Hello Revival</p>
+        <div class="md:w-5/6 mx-auto">
+        <p class="text-primary-light text-left border-b-2 border-white w-1/2">photography by Hello Revival</p>
+        </div>
       </div>
     </div>
   </div>

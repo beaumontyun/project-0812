@@ -1,9 +1,9 @@
 <template>
-  <div class="h-screen container mx-auto text-white text-left justify-left">
+  <div class="container mx-auto text-white text-left justify-left">
     <div class="flex"><img src="../assets/FAQ.svg" alt="FAQ" class="pb-5">
     <p class="text-quaternary-light text-5xl font-bold self-center">FAQ</p>
     </div>
-    
+    <div class="overflow-y-auto h-96">
     <h1>How do I show support?</h1>
     <p>
       You can show us support for free by signing up to our email and updates
@@ -77,6 +77,7 @@
       from our “Documentation” page. If you can’t find what you are looking for
       also feel free to email us directly.
     </p>
+    </div>
   </div>
 </template>
 

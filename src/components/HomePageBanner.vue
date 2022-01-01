@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-cols-3 mb-10">
     <div>
-      <router-link to="/smart-profile">
+      <div type="button" @click="showModal4" class="cursor-pointer">
         <img
           src="../assets/Banner1.svg"
           id="banner1"
@@ -18,7 +18,8 @@
         >
           smart profile cards
         </p>
-      </router-link>
+      </div>
+      <SmartProfileModal :showModal4="showModal4" :modal4="modal4" aria-modal="smart profile" />
     </div>
     <div>
       <router-link to="/governance-token">
@@ -63,5 +64,31 @@
   </div>
 </template>
 
-<style>
-</style>
+<script>
+import SmartProfileModal from "../views/SmartProfileModal.vue"
+export default {
+  data() {
+    return {
+      modal4: false,
+    };
+  },
+  components: {
+    SmartProfileModal,
+  },
+  methods: {
+    showModal4() {
+      if (this.modal4) {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
+        this.modal4 = false;
+      } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
+        this.modal4 = true;
+      }
+    },
+  },
+};
+</script>

@@ -5,16 +5,27 @@
       <div class="grid grid-rows-5">
         <!-- title -->
         <div class="flex row-span-1">
-          <img src="../assets/PhysicalNFTCat.svg" alt="Cat" class="mr-3"/>
+          <img src="../assets/PhysicalNFTCat.svg" alt="Cat" class="mr-3" />
           <div class="text-left font-bold">
             <ul>
-              <li class="text-quaternary-light text-4xl text-shadow-md">physical NFTs</li>
-              <li class="text-primary-light text-2xl">More than just the digital. We make the digital, physical.</li>
+              <li class="text-quaternary-light text-4xl text-shadow-md">
+                physical NFTs
+              </li>
+              <li class="text-primary-light text-2xl">
+                More than just the digital. We make the digital, physical.
+              </li>
             </ul>
           </div>
         </div>
         <!-- text -->
-        <div class="row-span-4 text-primary-light text-left text-2xl font-semibold pt-10">
+        <div
+          class="
+            row-span-4
+            text-primary-light text-left text-2xl
+            font-semibold
+            pt-10
+          "
+        >
           <ul class="list-disc list-inside">
             <li>
               By bringing the online to the offline we can open up a world where
@@ -35,9 +46,15 @@
 
       <!-- Screenshot -->
       <div class="mt-10">
-        <img src="../assets/PhysicalNFTBanner.svg" alt="" class="mx-auto">
+        <img
+          src="../assets/PhysicalNFTBanner.svg"
+          alt=""
+          class="h-5/6 w-auto"
+        />
         <div class="md:w-5/6 mx-auto">
-        <p class="text-primary-light text-left border-b-2 border-white w-1/2">photography by Clem Onojeghuo</p>
+          <p class="text-primary-light text-left border-b-2 border-white w-1/2">
+            photography by Clem Onojeghuo
+          </p>
         </div>
       </div>
     </div>

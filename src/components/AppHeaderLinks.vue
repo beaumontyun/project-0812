@@ -20,7 +20,7 @@
       type="button"
       @click="showModal"
       class="
-      antialiased
+        antialiased
         block
         text-left text-lg
         font-extrabold
@@ -36,13 +36,18 @@
       "
       aria-label="physical NFTs"
     >
-      <img src="../assets/PhysicalNFTButton.svg" alt="Physical NFT"></div
-    >
-    <PhysicalNFTModal :showModal="showModal" :modal="modal" aria-modal="Physical NFT"/>
-    <router-link
-      to="/metaverse-marketing"
+      <img src="../assets/PhysicalNFTButton.svg" alt="Physical NFT" />
+    </div>
+    <PhysicalNFTModal
+      :showModal="showModal"
+      :modal="modal"
+      aria-modal="Physical NFT"
+    />
+    <div
+      type="button"
+      @click="showModal1"
       class="
-      antialiased
+        antialiased
         block
         text-left text-lg
         font-extrabold
@@ -54,14 +59,22 @@
         sm:pt-2 sm:border-t-0
         border-primary-light
         hover:text-shadow-sm
+        cursor-pointer
       "
       aria-label="metaverse & marketing"
-      ><img src="../assets/MetaverseButton.svg" alt="Metaverse & Marketplace"></router-link
     >
-    <router-link
-      to="/documentation"
+      <img src="../assets/MetaverseButton.svg" alt="Metaverse & Marketplace" />
+    </div>
+    <MetaverseModal
+      :showModal1="showModal1"
+      :modal1="modal1"
+      aria-modal="metaverse"
+    />
+    <div
+      type="button"
+      @click="showModal2"
       class="
-      antialiased
+        antialiased
         block
         text-left text-lg
         font-extrabold
@@ -73,15 +86,22 @@
         sm:pt-2 sm:border-t-0
         border-primary-light
         hover:text-shadow-sm
+        cursor-pointer
       "
       aria-label="documentation"
-      >
-      <img src="../assets/DocumentationButton.svg" alt="Documentation"></router-link
     >
-    <router-link
-      to="/faq"
+      <img src="../assets/DocumentationButton.svg" alt="Documentation" />
+    </div>
+    <DocumentationModal
+      :showModal2="showModal2"
+      :modal2="modal2"
+      aria-modal="documentation"
+    />
+    <div
+      type="button"
+      @click="showModal3"
       class="
-      antialiased
+        antialiased
         block
         text-left text-lg
         font-extrabold
@@ -93,35 +113,92 @@
         sm:pt-2 sm:border-t-0
         border-primary-light
         hover:text-shadow-sm
+        cursor-pointer
       "
       aria-label="faq"
-      ><img src="../assets/FAQButton.svg" alt="FAQ"></router-link
     >
+      <img src="../assets/FAQButton.svg" alt="FAQ" />
+    </div>
+    <FAQModal :showModal3="showModal3" :modal3="modal3" aria-modal="FAQ" />
   </div>
 </template>
 
 <script>
-import PhysicalNFTModal from "../views/PhysicalNFTModal.vue"
+import PhysicalNFTModal from "../views/PhysicalNFTModal.vue";
+import MetaverseModal from "../views/MetaverseModal.vue";
+import DocumentationModal from "../views/DocumentationModal.vue";
+import FAQModal from "../views/FAQModal.vue";
 
 export default {
   props: ["isOpen"],
   data() {
     return {
       modal: false,
-    }
+      modal1: false,
+      modal2: false,
+      modal3: false,
+    };
   },
   components: {
     PhysicalNFTModal,
+    MetaverseModal,
+    DocumentationModal,
+    FAQModal,
   },
   methods: {
     showModal() {
       if (this.modal) {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
         this.modal = false;
       } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
         this.modal = true;
       }
-    }
-  }
+    },
+    showModal1() {
+      if (this.modal1) {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
+        this.modal1 = false;
+      } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
+        this.modal1 = true;
+      }
+    },
+    showModal2() {
+      if (this.modal2) {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
+        this.modal2 = false;
+      } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
+        this.modal2 = true;
+      }
+    },
+    showModal3() {
+      if (this.modal3) {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
+        this.modal3 = false;
+      } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
+        this.modal3 = true;
+      }
+    },
+  },
 };
 </script>
 

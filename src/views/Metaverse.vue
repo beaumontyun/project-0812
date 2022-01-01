@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen container sm:mx-auto">
+  <div class="container sm:mx-auto overflow-y-auto">
     <div class="grid grid-cols-2 gap-x-5">
       <!-- Title and text -->
       <div class="grid grid-rows-5">
@@ -27,7 +27,7 @@
             pt-10
           "
         >
-          <ul class="list-disc">
+          <ul class="list-disc list-inside">
             <li>The metaverse is going to be part of the new world</li>
             <li>
               We have made this online platform metaverse capable, making sure
@@ -57,7 +57,9 @@
           alt=""
           class="h-5/6 w-auto"
         />
-        <p class="text-primary-light text-left border-b-2 border-white w-1/2 ml-3">photography by Andre Benz</p>
+        <div class="md:w-5/6 mx-auto">
+        <p class="text-primary-light text-left border-b-2 border-white w-1/2">photography by Andre Benz</p>
+        </div>
       </div>
     </div>
   </div>

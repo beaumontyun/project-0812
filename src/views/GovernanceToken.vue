@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen container sm:mx-auto">
+  <div class="container sm:mx-auto">
     <div class="grid grid-cols-2 gap-x-5">
       <!-- Title and text -->
       <div class="grid grid-rows-5">
