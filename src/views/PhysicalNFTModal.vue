@@ -38,10 +38,12 @@
                   <i data-feather="x"></i>
                 </button>
               </div>
-              <!-- Modal contents -->
+              
               <div class="p-3 text-left my-6">
                 <PhysicalNFTs class="justify-self-center content-center"/>
               </div>
+            
+            <!-- <img src="../assets/TestNFT.svg" alt=""> -->
             </div>
           </div>
         </transition>

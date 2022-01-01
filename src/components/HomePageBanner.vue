@@ -43,7 +43,7 @@
       <GovernanceTokenModal :showModal5="showModal5" :modal5="modal5" aria-modal="smart profile" />
     </div>
     <div>
-      <router-link to="*">
+      <div type="button" @click="showModal6" class="cursor-pointer">
         <img
           src="../assets/Banner1.svg"
           id="banner3"
@@ -60,7 +60,8 @@
         >
           0% commission marketplace
         </p>
-      </router-link>
+      </div>
+      <marketplace-modal :showModal6="showModal6" :modal6="modal6" aria-modal="marketplace" />
     </div>
   </div>
 </template>
@@ -68,17 +69,20 @@
 <script>
 import SmartProfileModal from "../views/SmartProfileModal.vue"
 import GovernanceTokenModal from "../views/GovernanceTokenModal.vue"
+import MarketplaceModal from '../views/MarketplaceModal.vue';
 
 export default {
   data() {
     return {
       modal4: false,
       modal5: false,
+      modal6: false,
     };
   },
   components: {
     SmartProfileModal,
-    GovernanceTokenModal
+    GovernanceTokenModal,
+    MarketplaceModal
   },
   methods: {
     showModal4() {
@@ -105,6 +109,19 @@ export default {
           .getElementsByTagName("html")[0]
           .classList.add("overflow-y-hidden");
         this.modal5 = true;
+      }
+    },
+    showModal6() {
+      if (this.modal6) {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.remove("overflow-y-hidden");
+        this.modal6 = false;
+      } else {
+        document
+          .getElementsByTagName("html")[0]
+          .classList.add("overflow-y-hidden");
+        this.modal6 = true;
       }
     },
   },

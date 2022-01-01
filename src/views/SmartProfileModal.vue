@@ -76,7 +76,6 @@ export default {
 <style scoped>
 #cover {
   background-image: url('../assets/SmartCardPageBackground.jpg');
-
 }
 /* .bg-gray-800-opacity {
   background-color: #2d374850;
