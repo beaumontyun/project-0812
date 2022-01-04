@@ -1,8 +1,8 @@
 <template>
   <div class="py-10 select-none">
     <!-- title -->
-    <div class="flex justify-left">
-      <img src="../assets/PartnerBanner.svg" alt="Partner banner" />
+    <div class="sm:flex sm:justify-left">
+      <img src="../assets/PartnerBanner.svg" alt="Partner banner" class=""/>
       <p class="text-4xl flex items-center text-primary-light font-bold ml-2">
         PARTNERSHIPS
       </p>
